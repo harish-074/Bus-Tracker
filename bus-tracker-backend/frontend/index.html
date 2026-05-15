@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>College Bus Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>College Bus Tracking System</h1>
+</div>
+
+<div class="search-box">
+
+    <label for="busNumber">Bus Number</label><br><br>
+
+    <input type="number" id="busNumber" placeholder="Enter Bus Number (1-10)">
+
+    <button onclick="trackBus()">Track Bus</button>
+
+</div>
+
+<div id="map"></div>
+
+<script src="script.js" defer></script>
+
+</body>
+
+</html>
