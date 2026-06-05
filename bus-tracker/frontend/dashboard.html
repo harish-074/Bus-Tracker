@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKCE Dashboard</title>
+
+    ```
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    ```
+
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    ```
+    <div class="dashboard-header">
+        <h1>MKCE Bus Tracking Portal</h1>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="dashboard-content">
+
+        <div class="welcome-box">
+            <h2>Welcome, Student</h2>
+            <p>
+                Track your assigned college bus in real-time and
+                view route information, driver details and status.
+            </p>
+        </div>
+
+        <div class="bus-box">
+
+            <h3>Track Your Bus</h3>
+
+            <input
+                    type="number"
+                    id="busNumber"
+                    placeholder="Enter Bus Number">
+
+            <button onclick="trackBus()">
+                Track Bus
+            </button>
+
+            <div id="busInfo"
+                 style="display:none; margin-top:20px;">
+
+                <hr style="margin:15px 0;">
+
+                <h3>Bus Details</h3>
+
+                <p>
+                    <strong>Bus Number:</strong>
+                    <span id="infoBusNumber"></span>
+                </p>
+
+                <p>
+                    <strong>Route:</strong>
+                    <span id="infoRoute"></span>
+                </p>
+
+                <p>
+                    <strong>Driver:</strong>
+                    <span id="infoDriver"></span>
+                </p>
+
+                <p>
+                    <strong>Contact:</strong>
+                    <span id="infoContact"></span>
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    <span id="infoStatus"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="map-box">
+            <h3>Live Bus Tracking Map</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+    ```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
